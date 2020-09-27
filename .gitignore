@@ -18,3 +18,7 @@ target
 
 out
 *.log
+
+checkstyle.xml
+README.md
+lib
