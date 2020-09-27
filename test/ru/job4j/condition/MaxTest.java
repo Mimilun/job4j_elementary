@@ -21,4 +21,19 @@ public class MaxTest {
         int result = Max.max(11, 11);
         assertThat(result, is(11));
     }
+    @Test
+    public void whenMaxTree() {
+        int result = Max.max(2, 7, 4);
+        assertThat(result, is(7));
+    }
+    @Test
+    public void whenMaxFour() {
+        int result = Max.max(3, 6, 5, 9);
+        assertThat(result, is(9));
+    }
+    @Test
+    public void whenEquals() {
+        int result = Max.max(7, 7, 7, 7);
+        assertThat(result, is(7));
+    }
 }
