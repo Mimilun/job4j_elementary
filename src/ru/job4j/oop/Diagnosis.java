@@ -1,7 +1,7 @@
 package ru.job4j.oop;
 
 public class Diagnosis extends Doctor {
-    public int retring;
+    private int retring;
 
     public boolean MakeAnAppointment () {
 
