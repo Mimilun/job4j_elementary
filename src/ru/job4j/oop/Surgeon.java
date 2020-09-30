@@ -1,9 +1,9 @@
 package ru.job4j.oop;
 
-public class Diagnosis extends Doctor {
+public class Surgeon extends Doctor {
     private int retring;
 
-    public Diagnosis(String name, String surname, String education, int birthday) {
+    public Surgeon(String name, String surname, String education, int birthday) {
         super(name, surname, education, birthday);
     }
 
