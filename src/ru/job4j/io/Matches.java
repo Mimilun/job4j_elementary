@@ -13,13 +13,13 @@ public class Matches {
             str = player ? "Первый" : "Второй";
             System.out.println(str + " игрок возьмите спичек от 1 до 3-х ");
             player = !player;
-            select = Integer.valueOf(input.nextLine());
+            select = Integer.parseInt(input.nextLine());
             while (select < 1 || select > 3) {
                 System.out.println("!!! От 1 до 3-х");
-                select = Integer.valueOf(input.nextLine());
+                select = Integer.parseInt(input.nextLine());
             }
             countMatch -= select;
-            countMatch = countMatch < 0 ? 0 : countMatch;
+            countMatch = Math.max(countMatch, 0);
             System.out.println("На столе осталось " + countMatch + " спичек");
         }
         System.out.println("\n" + str + " игрок победил!!!");
